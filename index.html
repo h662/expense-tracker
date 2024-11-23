@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Expense Tracker</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Input Section -->
+      <section id="input-section">
+        <h2>Add Transaction</h2>
+        <form id="transaction-form">
+          <input
+            type="text"
+            id="transaction-name"
+            placeholder="Transaction Name"
+            required
+          />
+          <input
+            type="number"
+            id="transaction-amount"
+            placeholder="Amount (e.g., 100 or -50)"
+            required
+          />
+          <button type="submit" id="add-transaction-btn">Add</button>
+        </form>
+      </section>
+
+      <!-- Transaction List Section -->
+      <section id="transaction-list-section">
+        <h2>Transaction History</h2>
+        <ul id="transaction-list">
+          <!-- Transaction items will be dynamically added here -->
+        </ul>
+      </section>
+
+      <!-- Balance Section -->
+      <section id="balance-section">
+        <h2>Total Balance</h2>
+        <p id="total-balance">$0.00</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Expense Tracker. All rights reserved.</p>
+    </footer>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
